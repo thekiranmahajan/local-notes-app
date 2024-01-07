@@ -108,5 +108,5 @@ body {
   transform: scale(0.92);
 }
 .note-card::placeholder {
-  color: rgb(128, 128, 128);
+  color: rgb(200, 196, 196);
 }
