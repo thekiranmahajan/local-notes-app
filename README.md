@@ -4,9 +4,14 @@ Hello!! Folks,😊
 
 
 
-🆚 GitHub link for Geeks: https://github.com/thekiranmahajan/local-notes-app
+https://github.com/thekiranmahajan/local-notes-app/assets/91893931/fc24e54e-6775-4983-a98a-8dee4db38a0e
 
-💻 Live Demo: https://local-notes-app-ray.vercel.app/
+
+🆚 GitHub link for Geeks:
+https://github.com/thekiranmahajan/local-notes-app
+
+💻 Live Demo:
+https://local-notes-app-ray.vercel.app/
 
 
 
