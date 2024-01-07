@@ -53,7 +53,7 @@ body {
 .notes-container {
   border-radius: 10px;
   width: 95%;
-  min-height: 80%;
+  min-height: 80vh;
   margin: 20px 5px;
   background: rgb(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
@@ -111,7 +111,6 @@ body {
 }
 
 #delete-all {
-  /* padding: 5px 5px; */
   font-size: xx-large;
   cursor: pointer;
   background: transparent;
