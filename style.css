@@ -111,9 +111,12 @@ body {
 }
 
 #delete-all {
-  padding: 5px;
+  /* padding: 5px 5px; */
   font-size: xx-large;
   cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
 }
 #delete-all:active {
   font-size: x-large;

@@ -47,7 +47,6 @@ function addNote() {
   noteContainer.insertBefore(noteEl, btn);
   notes.push(noteObject);
   saveNotes(notes);
-  console.log(notes);
 }
 function saveNotes(notes) {
   localStorage.setItem("note-dashboard", JSON.stringify(notes));
@@ -58,7 +57,12 @@ function getNotes() {
 
 btn.addEventListener("click", addNote);
 
-deleteAll.addEventListener("click", () => {
+const deleteAllNotes = () => {
+  document.querySelectorAll(".note-card").forEach((note) => {
+    noteContainer.removeChild(note);
+    console.log(note);
+  });
   localStorage.clear();
-  location.reload();
-});
+};
+
+deleteAll.addEventListener("click", deleteAllNotes);
