@@ -11,8 +11,12 @@ function createNoteEl(id, content) {
   textArea.classList.add("note-card");
   textArea.placeholder = "Empty Note";
   textArea.value = content;
+  textArea.id = id;
 
-  const deleteNote = () => {};
+  const deleteNote = (id, textArea) => {
+    const notes = getNotes().filter((note) => note.id !== id);
+    saveNotes(notes);
+  };
   const updateNote = (id, content) => {
     const notes = getNotes();
     const targetedNote = notes.filter((note) => note.id == id)[0];

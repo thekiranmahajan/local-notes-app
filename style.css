@@ -21,7 +21,7 @@ body {
   position: relative;
   text-align: center;
   background-image: linear-gradient(
-    to bottom,
+    to left bottom,
     #dbdcd7 0%,
     #dddcd7 24%,
     #e2c9cc 30%,
