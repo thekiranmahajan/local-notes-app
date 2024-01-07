@@ -1,6 +1,6 @@
 const btn = document.getElementById("btn");
 const noteContainer = document.querySelector(".notes-container");
-
+const deleteAll = document.getElementById("delete-all");
 getNotes().forEach((note) => {
   const noteEl = createNoteEl(note.id, note.content);
   noteContainer.insertBefore(noteEl, btn);
@@ -16,6 +16,7 @@ function createNoteEl(id, content) {
   const deleteNote = (id, textArea) => {
     const notes = getNotes().filter((note) => note.id !== id);
     saveNotes(notes);
+    noteContainer.removeChild(textArea);
   };
   const updateNote = (id, content) => {
     const notes = getNotes();
@@ -46,6 +47,7 @@ function addNote() {
   noteContainer.insertBefore(noteEl, btn);
   notes.push(noteObject);
   saveNotes(notes);
+  console.log(notes);
 }
 function saveNotes(notes) {
   localStorage.setItem("note-dashboard", JSON.stringify(notes));
@@ -55,3 +57,8 @@ function getNotes() {
 }
 
 btn.addEventListener("click", addNote);
+
+deleteAll.addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
+});
